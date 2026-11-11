@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Präsentation — Kerri Kuzbyt nach Frankfurt · Makkabi Basketball</title>
+<meta name="description" content="Foliensatz für die Vorstandspräsentation: zwei Leistungscamps und zwölf Monate Trainer-Mentorship mit Kerri Kuzbyt.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<style>
+  html, body { height: auto; }
+  body { scroll-snap-type: y mandatory; overflow-x: hidden; }
+  .progress { position: fixed; top: 0; left: 0; height: 3px; width: 0; background: var(--orange); z-index: 99; transition: width .3s ease; }
+  @media (prefers-reduced-motion: reduce){ .progress { transition: none; } }
+
+  .slide { min-height: 100svh; scroll-snap-align: start; display: flex; flex-direction: column; justify-content: center; padding: clamp(1.8rem, 6vw, 4.5rem); position: relative; }
+  .slide__in { width: min(100%, 980px); margin-inline: auto; width: min(100%, 980px); }
+  .slide__meta { width: min(100%, 980px); margin: auto auto 0; display: flex; justify-content: space-between; align-items: center; font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.1em; text-transform: uppercase; padding-top: 1.8rem; opacity: 0.65; }
+  .slide h2.display { font-size: clamp(2rem, 5.2vw, 3.6rem); margin-bottom: 1.2rem; }
+  .slide .lede { max-width: 50ch; }
+
+  /* Navy-Folien */
+  .slide--navy { background: var(--navy); color: var(--chalk); }
+  .slide--navy .display { color: var(--chalk); }
+  .slide--navy .lede, .slide--navy .muted { color: var(--chalk-dim); }
+  .slide--navy .eyebrow { color: var(--orange-2); }
+  .slide--navy ul.ticks li::before { color: var(--orange-2); }
+  .slide--navy .statline { background: var(--line-navy); border-color: var(--line-navy); }
+  .slide--navy .statline__item { background: var(--navy-2); }
+  .slide--navy .statline__num { color: #fff; }
+  .slide--navy .statline__num .u { color: var(--orange-2); }
+  .slide--navy .statline__lbl { color: var(--chalk-faint); }
+
+  .slide__hint { font-family: var(--mono); font-size: 0.74rem; color: var(--chalk-faint); margin-top: 2.5rem; letter-spacing: 0.06em; }
+  .bigstat { font-family: var(--mono); font-weight: 600; font-size: clamp(4rem, 16vw, 9rem); line-height: 0.9; color: var(--orange-2); font-feature-settings: "tnum"; }
+  .pillars { display: grid; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--r); overflow: hidden; margin-top: 1.5rem; }
+  @media (min-width: 680px){ .pillars { grid-template-columns: 1fr 1fr; } }
+  .pillars div { background: var(--paper-2); padding: 1.1rem 1.3rem; }
+  .pillars b { font-family: var(--display); color: var(--orange-ink); }
+  .ticks--lg li { font-size: 1.1rem; }
+</style>
+</head>
+<body>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- 1 -->
+<section class="slide slide--navy" id="s1">
+  <div class="slide__in">
+    <p class="eyebrow">Entscheidungsvorlage · Basketball-Abteilung</p>
+    <h1 class="display" style="font-size:clamp(2.8rem,8vw,5rem);font-weight:900;line-height:0.98">Elite-Coaching,<br>das im Verein <span style="color:var(--orange-2)">bleibt.</span></h1>
+    <p class="lede" style="margin-top:1.4rem">Kerri Kuzbyt für zwei Leistungscamps und zwölf Monate Trainer-Mentorship nach Frankfurt.</p>
+    <p class="slide__hint">↓ scrollen · oder Pfeiltasten ← →</p>
+  </div>
+  <div class="slide__meta"><span>Makkabi Frankfurt · Basketball</span><span class="data">01 / 12</span></div>
+</section>
+
+<!-- 2 -->
+<section class="slide" id="s2">
+  <div class="slide__in">
+    <p class="eyebrow">Der Antrag</p>
+    <h2 class="display">Freigabe des vollen Pakets.</h2>
+    <div class="statline" style="margin:1.5rem 0">
+      <div class="statline__item"><div class="statline__num">7.000 <span class="u">€</span></div><div class="statline__lbl">Programm</div></div>
+      <div class="statline__item"><div class="statline__num">+1,5–2 <span class="u">k€</span></div><div class="statline__lbl">Reise/Unterkunft</div></div>
+      <div class="statline__item"><div class="statline__num">2</div><div class="statline__lbl">Camps</div></div>
+      <div class="statline__item"><div class="statline__num">12</div><div class="statline__lbl">Monate</div></div>
+    </div>
+    <p class="lede">All-in rund <strong>8.500–9.000 €</strong>. Pro Camp ~4.000–4.500 € Mehraufwand — getragen vom bestehenden Camp-Modell.</p>
+  </div>
+  <div class="slide__meta"><span>Der Antrag</span><span class="data">02 / 12</span></div>
+</section>
+
+<!-- 3 -->
+<section class="slide slide--navy" id="s3">
+  <div class="slide__in">
+    <p class="eyebrow">Wer ist sie</p>
+    <h2 class="display">Nationalakademie-Niveau.<br>Mit Deutschland-Bezug.</h2>
+    <ul class="ticks ticks--lg" style="margin-top:1.5rem">
+      <li>Head of Player Development — Scottish Basketball Federation</li>
+      <li>Leitet die U14-Nationalakademie (♀ &amp; ♂)</li>
+      <li>Clinician — Transforming Basketball (international)</li>
+      <li>Ex-Profi: Kanada · Australien · Spanien · <strong>Deutschland (2. BBL)</strong></li>
+      <li>Spezialgebiet: Female Athlete Development</li>
+    </ul>
+  </div>
+  <div class="slide__meta"><span>Kerri Kuzbyt</span><span class="data">03 / 12</span></div>
+</section>
+
+<!-- 4 -->
+<section class="slide" id="s4">
+  <div class="slide__in">
+    <p class="eyebrow">Was sie anders macht</p>
+    <h2 class="display">„Movements &gt; Moves."</h2>
+    <div class="pillars">
+      <div><b>Skill Acquisition</b><p class="muted" style="margin:.3rem 0 0">Lernen im Spiel (Constraints-Led), nicht im isolierten Drill.</p></div>
+      <div><b>Funktionelle Bewegung</b><p class="muted" style="margin:.3rem 0 0">Lösungen pro Körper — geringeres Verletzungsrisiko.</p></div>
+      <div><b>Fehler als Werkzeug</b><p class="muted" style="margin:.3rem 0 0">Resilienz und Spielintelligenz statt Angst vorm Scheitern.</p></div>
+      <div><b>Coaches inklusive</b><p class="muted" style="margin:.3rem 0 0">Bildet unsere Trainer mit aus — der Wert bleibt im Verein.</p></div>
+    </div>
+  </div>
+  <div class="slide__meta"><span>Methodik</span><span class="data">04 / 12</span></div>
+</section>
+
+<!-- 5 -->
+<section class="slide slide--navy" id="s5">
+  <div class="slide__in">
+    <p class="eyebrow">Das Angebot</p>
+    <h2 class="display">Kein 2-Camp-Preis.<br>Ein Jahr Know-how.</h2>
+    <ul class="ticks ticks--lg" style="margin-top:1.5rem">
+      <li><strong>2 On-Court-Camps</strong> (Lead + Shadow, Coach-Clinics)</li>
+      <li><strong>12 Monate Mentorship</strong> (Beratung vor/nach Camp, &gt;2 Calls/Woche)</li>
+      <li><strong>Film-Breakdowns</strong> für Athleten &amp; Coaches</li>
+      <li><strong>4 Masterclasses</strong> (PDP, Talent-ID, Druck, selbstständig trainieren)</li>
+      <li><strong>24/7-Digital-Library</strong> — bleibt dauerhaft</li>
+    </ul>
+  </div>
+  <div class="slide__meta"><span>Das Angebot</span><span class="data">05 / 12</span></div>
+</section>
+
+<!-- 6 -->
+<section class="slide" id="s6">
+  <div class="slide__in">
+    <p class="eyebrow">Warum es sich rechnet · 1</p>
+    <h2 class="display">Die Premium-Variante unseres besten Produkts.</h2>
+    <div class="statline" style="margin:1.5rem 0">
+      <div class="statline__item"><div class="statline__num">225/175 <span class="u">€</span></div><div class="statline__lbl">pro Camp (regulär/Mitgl.)</div></div>
+      <div class="statline__item"><div class="statline__num">~70</div><div class="statline__lbl">Kinder / Camp</div></div>
+      <div class="statline__item"><div class="statline__num">~50 <span class="u">%</span></div><div class="statline__lbl">Marge</div></div>
+      <div class="statline__item"><div class="statline__num">~10</div><div class="statline__lbl">Camps / Jahr</div></div>
+    </div>
+    <p class="lede">Camps sind heute die <strong>Haupteinnahmequelle</strong> der Abteilung. Das Kerri-Camp läuft in genau diesem Modell — kein neuer Kostenblock.</p>
+  </div>
+  <div class="slide__meta"><span>Wirtschaftlichkeit</span><span class="data">06 / 12</span></div>
+</section>
+
+<!-- 7 -->
+<section class="slide slide--navy" id="s7">
+  <div class="slide__in">
+    <p class="eyebrow">Warum es sich rechnet · 2</p>
+    <h2 class="display">Kostendeckend — mindestens.</h2>
+    <div class="play">
+      <div class="play__node"><span class="play__lbl data">Einnahmen</span><span class="play__val data">~10.000 €</span><span class="play__sub">50 × ~200 €</span></div>
+      <span class="play__arrow" aria-hidden="true">▸</span>
+      <div class="play__node play__node--minus"><span class="play__lbl data">− Basiskosten</span><span class="play__val data">~5.000 €</span><span class="play__sub">Halle, Team, Essen</span></div>
+      <span class="play__arrow" aria-hidden="true">▸</span>
+      <div class="play__node play__node--minus"><span class="play__lbl data">− Kerri</span><span class="play__val data">~4–4,5 k€</span><span class="play__sub">Honorar + Reise</span></div>
+      <span class="play__arrow" aria-hidden="true">▸</span>
+      <div class="play__node play__node--result"><span class="play__lbl data">Ergebnis</span><span class="play__val data">+</span><span class="play__sub">70 TN: ~+2,5–3 k€</span></div>
+    </div>
+    <p class="lede" style="margin-top:1.8rem">Der eigentliche Hebel: Das Mentorship hebt die Qualität <strong>aller ~10 Camps pro Jahr</strong>.</p>
+  </div>
+  <div class="slide__meta"><span>Wirtschaftlichkeit</span><span class="data">07 / 12</span></div>
+</section>
+
+<!-- 8 -->
+<section class="slide" id="s8">
+  <div class="slide__in">
+    <p class="eyebrow">Der Mehrwert</p>
+    <h2 class="display">Vier Säulen — plus ein ganzer Katalog.</h2>
+    <div class="pillars">
+      <div><b>Methodik-USP</b><p class="muted" style="margin:.3rem 0 0">In Hessen an der Basis Seltenheitswert.</p></div>
+      <div><b>Budget</b><p class="muted" style="margin:.3rem 0 0">Premium im profitablen Camp-Modell.</p></div>
+      <div><b>Trainerentwicklung</b><p class="muted" style="margin:.3rem 0 0">Wissen bleibt im Verein.</p></div>
+      <div><b>Werte &amp; Außenwirkung</b><p class="muted" style="margin:.3rem 0 0">Leuchtturm, Mädchenförderung, „Zusammen1".</p></div>
+    </div>
+    <p class="muted" style="margin-top:1.2rem">Dahinter: über 25 Einzelargumente nach Thema — in der <a href="index.html#argumente">Entscheidungsvorlage</a>.</p>
+  </div>
+  <div class="slide__meta"><span>Mehrwert</span><span class="data">08 / 12</span></div>
+</section>
+
+<!-- 9 -->
+<section class="slide slide--navy" id="s9">
+  <div class="slide__in">
+    <p class="eyebrow">Werte &amp; Sichtbarkeit</p>
+    <h2 class="display">Ein weibliches Vorbild — wo Vorbilder fehlen.</h2>
+    <div style="display:flex;align-items:baseline;gap:1.2rem;flex-wrap:wrap;margin:1rem 0 1.4rem">
+      <span class="bigstat">~20%</span>
+      <span class="muted" style="max-width:24ch">der lizenzierten Basketball-Trainer:innen in Deutschland sind Frauen — bei ~50 % Bevölkerungsanteil.</span>
+    </div>
+    <ul class="ticks">
+      <li>Anschluss an Makkabis Mission „Zusammen1" — Werte &amp; Vielfalt durch Sport.</li>
+      <li>Makkabi hat bereits ein <strong>Girls-Only-Camp</strong> — Kerri passt punktgenau.</li>
+    </ul>
+  </div>
+  <div class="slide__meta"><span>Werte</span><span class="data">09 / 12</span></div>
+</section>
+
+<!-- 10 -->
+<section class="slide" id="s10">
+  <div class="slide__in">
+    <p class="eyebrow">Finanzierung &amp; Förderung</p>
+    <h2 class="display">Teilnehmerbeiträge tragen die Camps.</h2>
+    <ul class="ticks ticks--lg" style="margin-top:1.3rem">
+      <li><strong>Landessportbund Hessen</strong> — Qualifizierungs-/Übungsleiterförderung</li>
+      <li><strong>Sterne des Sports</strong> (DOSB + Volksbanken) — Preisgelder</li>
+      <li><strong>Sport integriert Hessen</strong> — über das Sportamt Frankfurt</li>
+      <li><strong>Sponsoren</strong> — Flaggschiff-Event, VGF bereits an Bord</li>
+    </ul>
+    <p class="muted" style="margin-top:1rem">Als Entlastung, nicht als gesichert. Vorlauf bis Ostern 2027 reicht für die Anträge.</p>
+  </div>
+  <div class="slide__meta"><span>Finanzierung</span><span class="data">10 / 12</span></div>
+</section>
+
+<!-- 11 -->
+<section class="slide slide--navy" id="s11">
+  <div class="slide__in">
+    <p class="eyebrow">Zeitplan</p>
+    <h2 class="display">Genug Vorlauf bis Ostern 2027.</h2>
+    <div class="timeline" style="margin-top:1rem">
+      <div class="timeline__step"><span class="timeline__when data">Jetzt</span><span>Grundsatz-Freigabe im Gremium, Zahlen final bestätigen.</span></div>
+      <div class="timeline__step"><span class="timeline__when data">danach</span><span>Termin fixieren, Halle buchen, Förderanträge stellen.</span></div>
+      <div class="timeline__step"><span class="timeline__when data">Q1 2027</span><span>Anmeldung, Gäste-Vereine einladen, PR.</span></div>
+      <div class="timeline__step timeline__step--go"><span class="timeline__when data">22.03.27</span><span><strong>Camp 1 — Osterferien.</strong></span></div>
+    </div>
+  </div>
+  <div class="slide__meta"><span>Zeitplan</span><span class="data">11 / 12</span></div>
+</section>
+
+<!-- 12 -->
+<section class="slide" id="s12">
+  <div class="slide__in">
+    <p class="eyebrow">Der Antrag</p>
+    <h2 class="display">Wir bitten um die Freigabe.</h2>
+    <p class="lede"><strong>7.000 € Programm + ~1.500–2.000 € Reise</strong> für das vollständige 12-Monats-Paket mit zwei Camps — eine Investition, die bei unseren Trainern und im Camp-Geschäft bleibt.</p>
+    <div class="hero__actions" style="margin-top:1.8rem">
+      <a class="btn btn--primary" href="index.html">Zur Entscheidungsvorlage ▸</a>
+      <a class="btn btn--ghost" href="#s1">Von vorn</a>
+    </div>
+    <p class="muted" style="margin-top:1.8rem;font-size:.85rem">Vorgelegt von der Basketball-Abteilung · präsentiert durch Razvan (Trainerkoordinator).</p>
+  </div>
+  <div class="slide__meta"><span>Danke</span><span class="data">12 / 12</span></div>
+</section>
+
+<script>
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  const progress = document.getElementById('progress');
+  const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let i = 0;
+  function go(n){
+    i = Math.max(0, Math.min(slides.length - 1, n));
+    slides[i].scrollIntoView({ behavior: reduce ? 'auto' : 'smooth' });
+  }
+  document.addEventListener('keydown', (e) => {
+    if (['ArrowDown','ArrowRight','PageDown',' '].includes(e.key)) { e.preventDefault(); go(i + 1); }
+    else if (['ArrowUp','ArrowLeft','PageUp'].includes(e.key)) { e.preventDefault(); go(i - 1); }
+    else if (e.key === 'Home') { e.preventDefault(); go(0); }
+    else if (e.key === 'End') { e.preventDefault(); go(slides.length - 1); }
+  });
+  // Fortschritt + aktuelle Folie synchron halten
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach((en) => {
+      if (en.isIntersecting) {
+        i = slides.indexOf(en.target);
+        progress.style.width = ((i + 1) / slides.length * 100) + '%';
+      }
+    });
+  }, { threshold: 0.6 });
+  slides.forEach((s) => io.observe(s));
+</script>
+</body>
+</html>
