@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Kerri Kuzbyt nach Frankfurt — Mehrwert für den Verein</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800;900&family=IBM+Plex+Mono:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0D1C38; --navy-2:#15294B; --ink:#16213A; --ink-soft:#3C4A66;
+    --orange:#E4571F; --orange-ink:#B8420F; --chalk:#E9F0FA; --chalk-dim:rgba(233,240,250,.62);
+    --line:rgba(13,28,56,.16); --line-strong:rgba(13,28,56,.32); --tint:#F5F2EE;
+  }
+  *{box-sizing:border-box;}
+  @page{ size:A4; margin:18mm; }
+
+  html{ font-size:11pt; }
+  body{
+    margin:0; font-family:"IBM Plex Sans",sans-serif; color:var(--ink);
+    line-height:1.52; font-size:11pt; -webkit-print-color-adjust:exact; print-color-adjust:exact;
+  }
+  p{ margin:0 0 .55rem; }
+  strong{ color:var(--ink); font-weight:600; }
+  em{ color:var(--orange-ink); font-style:normal; font-weight:600; }
+
+  h1,h2,h3{ font-family:"Archivo",sans-serif; color:var(--navy); margin:0; line-height:1.08; letter-spacing:-.01em; }
+  .eyebrow{
+    font-family:"IBM Plex Mono",monospace; font-size:8pt; font-weight:600; letter-spacing:.18em;
+    text-transform:uppercase; color:var(--orange-ink); margin:0 0 .5rem; display:flex; align-items:center; gap:.5rem;
+  }
+  .eyebrow::before{ content:""; width:18px; height:2px; background:var(--orange); display:inline-block; }
+
+  /* ---- Cover ---- */
+  .cover{
+    background:var(--navy); color:var(--chalk); border-radius:5px;
+    padding:20mm 16mm; min-height:252mm; position:relative; overflow:hidden;
+    display:flex; flex-direction:column; break-after:page;
+  }
+  .cover .eyebrow{ color:var(--orange); }
+  .cover__brand{ font-family:"Archivo",sans-serif; font-weight:800; font-size:9pt; letter-spacing:.06em; color:var(--chalk); display:flex; align-items:center; gap:.5rem; }
+  .cover__brand .dot{ width:9px; height:9px; border-radius:50%; background:var(--orange); display:inline-block; }
+  .cover__mid{ margin-top:auto; margin-bottom:auto; }
+  .cover h1{ color:#fff; font-weight:900; font-size:40pt; line-height:1.0; margin:.3rem 0 1.1rem; max-width:15ch; }
+  .cover h1 .o{ color:var(--orange); }
+  .cover__sub{ font-size:13pt; color:var(--chalk-dim); max-width:42ch; line-height:1.45; }
+  .cover__foot{ font-family:"IBM Plex Mono",monospace; font-size:8.5pt; color:var(--chalk-dim); border-top:1px solid rgba(233,240,250,.2); padding-top:3mm; letter-spacing:.02em; }
+  .cover__court{ position:absolute; right:-28mm; top:38mm; width:150mm; opacity:.14; }
+
+  /* ---- Content ---- */
+  section.block{ margin-bottom:9mm; }
+  h2,h3,.eyebrow{ break-after:avoid; break-inside:avoid; }
+  h2{ font-size:19pt; font-weight:800; margin-bottom:.5rem; max-width:24ch; }
+  .lead{ font-size:12pt; color:var(--ink-soft); max-width:60ch; margin-bottom:.8rem; }
+
+  .rule{ height:1px; background:var(--line); border:0; position:relative; margin:9mm 0; }
+  .rule::after{ content:""; position:absolute; left:50%; top:50%; width:22px; height:22px; transform:translate(-50%,-50%); border:1.5px solid var(--line-strong); border-radius:50%; background:#fff; }
+
+  ul.val{ list-style:none; margin:.4rem 0 0; padding:0; }
+  ul.val li{ position:relative; padding-left:1.5rem; margin-bottom:.5rem; break-inside:avoid; }
+  ul.val li::before{ content:"›"; position:absolute; left:.1rem; top:0; color:var(--orange); font-family:"IBM Plex Mono",monospace; font-weight:700; }
+  ul.val b{ color:var(--navy); font-family:"Archivo",sans-serif; font-weight:700; }
+
+  /* Feature / Außendarstellung */
+  .feature{ background:var(--tint); border-left:4px solid var(--orange); border-radius:0 4px 4px 0; padding:7mm 8mm; break-inside:avoid; }
+  .feature .eyebrow{ margin-bottom:.4rem; }
+
+  .pull{ font-family:"Archivo",sans-serif; font-weight:700; font-size:16pt; color:var(--navy); line-height:1.25; border-left:4px solid var(--orange); padding-left:5mm; margin:6mm 0; max-width:40ch; break-inside:avoid; }
+
+  .two{ display:grid; grid-template-columns:1fr 1fr; gap:8mm; }
+  .card{ break-inside:avoid; }
+  .card h3{ font-size:13pt; font-weight:700; margin-bottom:.3rem; }
+  .card h3 .tag{ font-family:"IBM Plex Mono",monospace; font-size:7.5pt; letter-spacing:.12em; text-transform:uppercase; color:var(--orange-ink); display:block; margin-bottom:.15rem; font-weight:600; }
+
+  /* Running footer */
+  .pagefoot{
+    position:fixed; bottom:9mm; left:18mm; right:18mm;
+    display:flex; justify-content:space-between; align-items:center;
+    font-family:"IBM Plex Mono",monospace; font-size:7.5pt; letter-spacing:.06em;
+    color:var(--ink-soft); border-top:1px solid var(--line); padding-top:2mm;
+  }
+  .pagefoot .dot{ width:7px; height:7px; border-radius:50%; background:var(--orange); display:inline-block; margin-right:5px; vertical-align:middle; }
+</style>
+</head>
+<body>
+
+<!-- ============ COVER ============ -->
+<div class="cover">
+  <svg class="cover__court" viewBox="0 0 320 384" aria-hidden="true">
+    <g fill="none" stroke="#E9F0FA" stroke-width="1.5">
+      <rect x="16" y="16" width="288" height="352" rx="2"/>
+      <rect x="112" y="16" width="96" height="134"/>
+      <circle cx="160" cy="150" r="40"/>
+      <line x1="138" y1="30" x2="182" y2="30"/>
+      <circle cx="160" cy="40" r="7"/>
+      <path d="M44,16 L44,92 C44,186 276,186 276,92 L276,16"/>
+      <path d="M120,368 A40,40 0 0 1 200,368"/>
+    </g>
+    <path d="M160,292 C150,240 120,210 110,160" fill="none" stroke="#E4571F" stroke-width="3"/>
+  </svg>
+
+  <div class="cover__brand"><span class="dot"></span>MAKKABI FRANKFURT · BASKETBALL</div>
+
+  <div class="cover__mid">
+    <p class="eyebrow">Argumentation für Vorstand &amp; Gremium</p>
+    <h1>Kerri Kuzbyt nach <span class="o">Frankfurt.</span></h1>
+    <p class="cover__sub">Warum zwei Leistungscamps mit einer internationalen Spitzentrainerin ein Gewinn für den Verein sind — sportlich, menschlich und vor allem in der Wirkung nach außen.</p>
+  </div>
+
+  <div class="cover__foot">Vorgelegt von der Basketball-Abteilung · präsentiert durch Razvan (Trainerkoordinator)</div>
+</div>
+
+<!-- ============ DIE GELEGENHEIT ============ -->
+<section class="block">
+  <p class="eyebrow">Die Gelegenheit</p>
+  <h2>Mehr als ein Camp — ein Signal, wofür wir stehen.</h2>
+  <p class="lead">Makkabi hat die Chance, eine Trainerin von internationalem Format nach Frankfurt zu holen: jemanden, der im Hauptberuf die Nachwuchs-Nationalakademie eines ganzen Landes formt. Das ist keine gewöhnliche Trainingswoche.</p>
+  <p>Ein solches Camp verändert nicht nur, wie unsere Kinder spielen. Es verändert, wie über Makkabi gesprochen wird — bei Eltern, bei Talenten, bei anderen Vereinen und in der Öffentlichkeit. Es zeigt, dass unser Verein Qualität, Haltung und Weitblick zusammenbringt. Genau darum geht es in diesem Dokument: nicht um ein Angebot, sondern um den Mehrwert, den diese Einladung dem Verein bringt.</p>
+</section>
+
+<!-- ============ WER IST SIE ============ -->
+<section class="block">
+  <p class="eyebrow">Wer sie ist</p>
+  <h2>Nationalakademie-Niveau — mit einer klaren Lernidee.</h2>
+  <p>Kerri Kuzbyt leitet als <strong>Head of Player Development der Scottish Basketball Federation</strong> die U14-Nationalakademie für Jungen und Mädchen. International bildet sie Trainer aus — unter anderem bereits in Berlin. Als ehemalige Profispielerin kennt sie das Spiel auf höchstem Niveau aus eigener Erfahrung, auch aus Deutschland.</p>
+  <p>Ihr Markenzeichen ist nicht ein Katalog von Übungen, sondern eine Haltung zum Lernen: Kinder sollen verstehen, <em>wie</em> man lernt und Situationen im Spiel löst — statt Bewegungen nur nachzumachen. Fehler werden dabei zum Werkzeug, nicht zum Makel. Und sie ist Spezialistin für die Entwicklung junger Spielerinnen.</p>
+</section>
+
+<hr class="rule">
+
+<!-- ============ AUSSENDARSTELLUNG (CENTERPIECE) ============ -->
+<section class="block">
+  <p class="eyebrow">Das Aushängeschild · die Außenwirkung</p>
+  <h2>Was es für das Bild des Vereins bedeutet.</h2>
+
+  <div class="pull">„Ein Verein wird nicht nur an Ergebnissen gemessen, sondern an dem Bild, das er nach außen abgibt."</div>
+
+  <div class="feature">
+    <p style="margin:0">Für die Wahrnehmung eines Vereins zählt nicht allein, was in der Halle passiert, sondern welches Bild dabei entsteht. Ein Camp mit einer internationalen Spitzentrainerin verschiebt dieses Bild spürbar — und macht Makkabi sichtbar, unverwechselbar und attraktiv.</p>
+  </div>
+
+  <ul class="val" style="margin-top:6mm">
+    <li><b>Erste Adresse im hessischen Nachwuchs.</b> Makkabi wird zum Verein, der Weltklasse-Know-how an die Basis holt. Dieses Bild bleibt in den Köpfen — bei Eltern, Talenten und in der Szene.</li>
+    <li><b>Ein Leuchtturm mit Strahlkraft.</b> Ein Event dieser Güte wirkt weit über die eigenen Hallenwände hinaus und macht den Verein zum Gesprächsthema.</li>
+    <li><b>Eine Geschichte, die erzählt werden will.</b> Eine internationale Trainerin, ein Verein mit klarer Haltung, die Förderung von Mädchen — das ist Stoff für Presse, soziale Medien und Partner.</li>
+    <li><b>Profil statt Austauschbarkeit.</b> Wo andere Vereine Standard anbieten, setzt Makkabi ein Ausrufezeichen und hebt sich klar ab.</li>
+    <li><b>Attraktiv für Sponsoren und Partner.</b> Ein Flaggschiff-Event gibt Unterstützern eine Bühne — und dem Verein starke Argumente in Gesprächen.</li>
+    <li><b>Magnet für Mitglieder und Talente.</b> Sichtbarkeit und Qualität ziehen an. Familien schließen sich dem Verein an, der vorangeht.</li>
+    <li><b>Anschluss an ein internationales Netzwerk.</b> Die Verbindung zu Kerri und ihrem Umfeld öffnet Türen, die lokal verschlossen bleiben.</li>
+  </ul>
+</section>
+
+<hr class="rule">
+
+<!-- ============ MEHRWERT KINDER / TRAINER ============ -->
+<section class="block">
+  <p class="eyebrow">Der direkte Nutzen</p>
+  <h2>Was die Kinder und das Trainerteam davontragen.</h2>
+  <div class="two">
+    <div class="card">
+      <h3><span class="tag">Für die Kinder</span>Entwicklung, die trägt — und Freude</h3>
+      <ul class="val">
+        <li>Moderne, spielnahe Methodik, die Spielintelligenz und Spaß am Spiel fördert.</li>
+        <li>Ein Vorbild zum Anfassen: die Begegnung mit jemandem, der international gespielt und gearbeitet hat.</li>
+        <li>Mehr als Basketball: Umgang mit Druck, mit Fehlern, mit sich selbst — Kompetenzen fürs Leben.</li>
+        <li>Nachhaltige Entwicklung statt eines einmaligen Höhepunkts.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3><span class="tag">Für die Trainer</span>Know-how, das im Verein bleibt</h3>
+      <ul class="val">
+        <li>Die eigenen Coaches lernen mit — direkt in der Praxis, am eigenen Team.</li>
+        <li>Das Wissen bleibt im Verein und wirkt in allen Jahrgängen weiter.</li>
+        <li>Wertschätzung und Motivation für ein engagiertes, oft ehrenamtliches Team.</li>
+        <li>Eine gemeinsame Handschrift über alle Mini-Teams hinweg.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<hr class="rule">
+
+<!-- ============ WERTE ============ -->
+<section class="block">
+  <p class="eyebrow">Werte &amp; Haltung</p>
+  <h2>Ein Camp, das zu Makkabi passt.</h2>
+  <ul class="val">
+    <li><b>Mädchenförderung mit einem weiblichen Vorbild</b> — in einem Umfeld, in dem Trainerinnen bis heute deutlich unterrepräsentiert sind. Mädchen sehen, dass Spitzenbasketball auch ihnen gehört.</li>
+    <li><b>Weltoffenheit und Vielfalt,</b> ganz im Sinne von Makkabis Haltung und dem Gedanken von „Zusammen1" — Werte, die durch Sport erlebbar werden.</li>
+    <li><b>Gemeinschaft,</b> die verbindet: Kinder, Eltern und Trainer erleben zusammen etwas Besonderes und binden sich enger an den Verein.</li>
+  </ul>
+</section>
+
+<!-- ============ REGION ============ -->
+<section class="block">
+  <p class="eyebrow">Über den Verein hinaus</p>
+  <h2>Ausstrahlung in den hessischen Basketball.</h2>
+  <p>Öffnet Makkabi das Camp auch für Gäste aus anderen Vereinen, strahlt der Nutzen in die gesamte Region — und Makkabi positioniert sich als treibende Kraft im hessischen Nachwuchsbasketball. Das stärkt das Standing beim Verband und das Ansehen bei anderen Klubs. Aus einem internen Event wird ein Beitrag, den die ganze Basketball-Familie wahrnimmt.</p>
+</section>
+
+<hr class="rule">
+
+<!-- ============ FAZIT ============ -->
+<section class="block">
+  <p class="eyebrow">Fazit</p>
+  <h2>Eine Investition in das Gesicht des Vereins.</h2>
+  <p class="lead">Dieses Camp zahlt auf alles ein, was Makkabi ausmacht: auf die Entwicklung der Kinder, auf die Stärke des Trainerteams, auf unsere Werte — und vor allem auf das Bild, das der Verein nach außen abgibt.</p>
+  <p>Es macht Makkabi sichtbarer, unverwechselbarer und anziehender. Eine Gelegenheit wie diese kommt nicht oft. Unsere Empfehlung an den Vorstand: <em>Kerri Kuzbyt einladen — und dem Verein diese Bühne geben.</em></p>
+</section>
+
+</body>
+</html>
